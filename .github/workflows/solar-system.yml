@@ -27,7 +27,6 @@ jobs:
     
         - name: Install Dependencies
           run: npm install
-    
         - name: Unit Testing
           run: npm test
           
@@ -36,3 +35,4 @@ jobs:
           with:
             name: Mocha-Test-Result
             path: test-results.xml
+          if: always()
